@@ -1,0 +1,33 @@
+<%- include header %>
+<!-- end #header-wrapper -->
+
+
+<!--style给定宽度可以影响编辑器的最终宽度-->
+
+
+
+    <% posts.forEach(function(post,index){%>
+        <div class="post">
+            <h2 class="title"><a href="/u/<%= post.name%>/<%= post.time.day%>/<%= post.title%>"><%= post.title%> </a></h2>
+            <p class="meta"><%= post.time.minute%> Posted by <a href="#"><%= post.name %></a></p>
+            <!--<div class="entry">-->
+                <%- post.post%>
+
+
+            <!--</div>-->
+
+        </div>
+    <% }) %>
+
+
+
+
+
+
+
+
+    <%- include right %>
+
+<!-- end #page -->
+
+<%- include footer %>

@@ -1,0 +1,36 @@
+<%- include header %>
+
+
+
+<div class="post">
+
+    <h2 class="title"><a><%= post.title%></a></h2>
+    <p style="float: right">
+        <% if(user && (user.name == post.name)){%>
+            <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+            <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+            <% }%>
+    </p>
+    <p class="meta"><%= post.time.minute%> Posted by <a href="/u/<%= post.name %>"><%= post.name %></a>
+
+    </p>
+
+    <div class="entry">
+        <%- post.post%>
+    </div>
+
+
+
+
+
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1884946"></script>
+    <!-- UY END -->
+
+
+</div>
+
+
+<%- include right %>
+<%- include footer %>
