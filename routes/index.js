@@ -341,4 +341,14 @@ module.exports = function(app) {
         next();
     }
 
+
+    app.get('/aboutme', function (req, res) {
+        res.render('aboutme', {
+            title: '关于我',
+            user: req.session.user,
+            success: req.flash('success').toString(),
+            error: req.flash('error').toString()
+        });
+    });
+
 };
