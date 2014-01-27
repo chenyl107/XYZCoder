@@ -1,0 +1,27 @@
+<%- include header %>
+<!-- end #header-wrapper -->
+
+<ul class="archive">
+    <% var lastYear = 0 %>
+    <% var lastday = 0 %>
+    <% posts.forEach(function (post, index) { %>
+        <% if (lastYear != post.time.year) { %>
+            <li><h3><%= post.time.year %></h3></li>
+        <% lastYear=post.time.year } %>
+
+
+        <% if (lastday != post.time.day) { %>
+            <li><time><%= post.time.day %></time></li>
+        <% lastday=post.time.day }else{ %>
+            <li><time style="margin-right: 1.1em">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</time></li>
+        <% }%>
+        <li><a href="/u/<%= post.name %>/<%= post.time.day %>/<%= post.title %>"><%= post.title %></a></li>
+       <% }) %>
+</ul>
+
+
+    <%- include right %>
+
+<!-- end #page -->
+
+<%- include footer %>
