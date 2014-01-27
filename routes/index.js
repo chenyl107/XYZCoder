@@ -11,7 +11,8 @@ module.exports = function(app) {
     app.get('/', function (req, res) {
 
         console.log('----------------');
-        console.log(new Date().getMilliseconds());
+        console.log(new Date().getSeconds()+'.'+ new Date().getMilliseconds());
+
 //        Post.getAll(null,function(err,posts){
 //            if(err){
 //                posts = [];
@@ -33,7 +34,7 @@ module.exports = function(app) {
             if (err) {
                 posts = [];
             }
-            console.log(new Date().getMilliseconds());
+            console.log(new Date().getSeconds()+'.'+ new Date().getMilliseconds());
             res.render('index', {
                 title: '主页',
                 posts: posts,

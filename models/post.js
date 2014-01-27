@@ -101,7 +101,7 @@ Post.getAll = function(name,callback){
 
 //一次获取十篇文章
 Post.getTen = function(name, page, callback) {
-    console.log(new Date().getMilliseconds());
+    console.log(new Date().getSeconds()+'.'+ new Date().getMilliseconds());
     //打开数据库
     mongodb.open(function (err, db) {
         if (err) {
