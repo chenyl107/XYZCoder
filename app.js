@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(flash());
 app.use(express.favicon());
-//app.use(express.logger('dev'));
+app.use(express.logger('dev'));
 
 //app.use(express.bodyParser());
 //保留文件上传的后缀名，并把文件保存在public/images/upload文件夹下

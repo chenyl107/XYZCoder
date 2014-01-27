@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b93a52bf-aa88-4a20-848a-24b970ad3b7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/aboutme.ejs" afterPath="$PROJECT_DIR$/views/aboutme.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="xyzcoder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +61,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aboutme.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="aboutme.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/aboutme.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="68" selection-start="9660" selection-end="9716" vertical-scroll-proportion="0.82081914" vertical-offset="2864" max-vertical-offset="4755">
+            <state line="223" column="68" selection-start="9660" selection-end="9716" vertical-scroll-proportion="-20.041666" vertical-offset="2864" max-vertical-offset="4755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.6260032" vertical-offset="0" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -106,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/javascript/custom.js" />
         <option value="$PROJECT_DIR$/views/edit.ejs" />
         <option value="$PROJECT_DIR$/备用.txt" />
@@ -122,6 +130,7 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/impress_custom.css" />
         <option value="$PROJECT_DIR$/views/aboutme.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -395,11 +404,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/备用.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="48" selection-start="81" selection-end="81" vertical-scroll-proportion="0.024077047" vertical-offset="0" max-vertical-offset="623" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/post.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="287" column="39" selection-start="7271" selection-end="7279" vertical-scroll-proportion="0.6388443" vertical-offset="3907" max-vertical-offset="4875">
@@ -494,7 +498,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/aboutme.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="68" selection-start="9660" selection-end="9716" vertical-scroll-proportion="0.82081914" vertical-offset="2864" max-vertical-offset="4755">
+        <state line="223" column="68" selection-start="9660" selection-end="9716" vertical-scroll-proportion="-20.041666" vertical-offset="2864" max-vertical-offset="4755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.6260032" vertical-offset="0" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
