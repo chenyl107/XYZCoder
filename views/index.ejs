@@ -12,11 +12,15 @@
             <p class="meta"><%= post.time.minute%> Posted by <a href="#"><%= post.name %></a></p>
             <!--<div class="entry">-->
                 <%- post.post%>
-
-
             <!--</div>-->
-
         </div>
+
+        <% post.tags.forEach(function (tag, index) { %>
+            <% if (tag) { %>
+                <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+            <% } %>
+        <% }) %>
+
     <% }) %>
 
 

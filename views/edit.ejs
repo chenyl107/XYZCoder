@@ -26,6 +26,12 @@
 <form method="post" >
     标题：<br />
     <input type="text" name="title" id="post_test" value="<%= post.title %>" disabled="disabled" /><br />
+
+    标签：<br />
+    <input type="text" name="tag1" value="<%= post.tags[0] %>" disabled="disabled" />
+    <input type="text" name="tag2" value="<%= post.tags[1] %>" disabled="disabled" />
+    <input type="text" name="tag3" value="<%= post.tags[2] %>" disabled="disabled" /><br />
+
     正文：<br />
 
     <script type="text/plain" id="myEditor" name="post" style="width:800px;height:240px;" ><%- post.post %></script>
