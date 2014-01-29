@@ -5,10 +5,25 @@
 <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="/ueditor/_examples/editor_api.js"></script>
 <script type="text/javascript" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script>
+    function checkPost(){
 
+        var post_test = document.getElementById("post_test").value;
+        if(post_test == null ||post_test.search(/[\s]/g)!=-1){
+            alert("标题不能为空且不能包含空格!");
+        }else if(!ue.getEditor('myEditor').hasContent()){
+            alert("内容不能为空!");
+        }else{
+            return true;
+        }
+
+        return false;
+    }
+
+</script>
 <form method="post">
     标题：<br />
-    <input type="text" name="title" /><br />
+    <input type="text" id="post_test" name="title" style="width: 50%;"/><br />
     正文：<br />
 
 
@@ -19,7 +34,7 @@
 
 
 
-    <input type="submit" value="发表" />
+    <input type="submit" value="发表" style="width: 80px;" onclick="return checkPost()"/>
 </form>
 
 <script type="text/javascript">
@@ -44,7 +59,7 @@
         //关闭elementPath
         elementPathEnabled:false,
         //默认的编辑区域高度
-        initialFrameHeight:300
+        initialFrameHeight:500
         //更多其他参数，请参考umeditor.config.js中的配置项
     });
 
